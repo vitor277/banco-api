@@ -29,6 +29,12 @@ dependencies {
 
 }
 
+tasks.jar{
+	manifest {
+		attributes["Main-Class"] = "java/dio/banco/BancoApplication.java"
+	}
+}
+
 tasks.named('test') {
 	useJUnitPlatform()
 }
